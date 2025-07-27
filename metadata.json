@@ -1,0 +1,6 @@
+{
+  "name": "Personalized Storybook Illustrator",
+  "description": "A web application that allows users to write a story page by page and generate a unique, consistent illustration for each page using AI.",
+  "requestFramePermissions": [],
+  "prompt": ""
+}
