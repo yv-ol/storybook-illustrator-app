@@ -3,8 +3,18 @@
   "version": "1.0.0",
   "description": "A web application that allows users to write a story page by page and generate a unique, consistent illustration for each page using AI.",
   "private": true,
+  "scripts": {
+    "build": "esbuild index.tsx --bundle --outfile=dist/main.js --format=esm --jsx=automatic"
+  },
   "dependencies": {
     "@google/genai": "^1.10.0",
+    "html2canvas": "^1.4.1",
+    "jspdf": "^2.5.1",
+    "react": "^19.1.0",
+    "react-dom": "^19.1.0",
     "typescript": "^5.4.5"
+  },
+  "devDependencies": {
+    "esbuild": "^0.23.0"
   }
 }
