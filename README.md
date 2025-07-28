@@ -6,7 +6,7 @@ This project is a web application that uses Google's Gemini and Imagen models to
 ## See it in Action
 - [Vercel Deployment](https://storybook-illustrator-4jo1ywlmb-yv-os-projects.vercel.app)
 - [Demo](https://youtu.be/YiOz1zq--eg)
-- [Sample PDF Output] (SamplePDFOutput-Pips_Big_Blinking_Adventure.pdf)
+- [Sample PDF Output](SamplePDFOutput-Pips_Big_Blinking_Adventure.pdf)
 
 ## Features
 
