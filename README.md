@@ -1,11 +1,16 @@
+
 # Personalized Storybook Illustrator
 
 This project is a web application that uses Google's Gemini and Imagen models to generate unique illustrations for user-written stories. It's a demonstration of how to combine language and image models to create a cohesive, personalized piece of content, like a children's storybook.
 
+## See it in Action
+- [Vercel Deployment](https://storybook-illustrator-4jo1ywlmb-yv-os-projects.vercel.app)
+- [Demo](https://youtu.be/YiOz1zq--eg)
+
 ## Features
 
 - **Dynamic Story Illustration:** Generate unique images for each page of your story (from 1 to 5 pages).
-- **Character Consistency:** Uses prompt engineering techniques to help maintain a consistent character appearance across multiple illustrations—a fun challenge with generative models!
+- **Character Consistency:** Uses prompt engineering techniques to help maintain a consistent character appearance across multiple illustrations: a fun (and not always rewarding) challenge with generative models.
 - **Multiple Art Styles:** Choose from 9 distinct art styles, from "Watercolor and Ink" to "Bold Line Art," to define the look of your book.
 - **"Surprise Me!" Mode:** Feeling uninspired? Let the AI generate a character, a multi-page story, and a random art style for you.
 - **PDF Export:** Compile your finished story and illustrations into a downloadable PDF, ready for printing.
@@ -13,9 +18,9 @@ This project is a web application that uses Google's Gemini and Imagen models to
 
 ## How it Works
 
-The magic of this application lies in its multi-step AI orchestration process, where different models are used for the tasks they excel at:
+This application uses a multi-step AI orchestration process, where different models are used for the tasks they excel at:
 
-1.  **User Input:** You provide the creative foundation: an art style, a main character description, and the text for each page of the story.
+1.  **User Input:** You provide the creative foundation: an art style, a main character description, and the text for each page of the story. Or, if you used the *Surprise Me!* button, Gemini would've done this for you.
 2.  **Title Generation (Gemini):** The app sends the character description and story text to the `gemini-2.5-flash` model to brainstorm a short, catchy title for the book.
 3.  **Prompt Engineering (Gemini):** This is the most crucial step. For each image (cover and pages), the app does not send your raw text to the image model. Instead, it asks `gemini-2.5-flash` to act as an "expert prompt engineer." It gives Gemini the art style, character description, and page text, and instructs it to create a new, highly detailed prompt optimized for a text-to-image AI. This ensures the illustrations are rich, consistent, and adhere to the chosen style.
 4.  **Image Generation (Imagen):** The detailed prompt created by Gemini is then sent to the `imagen-3.0-generate-002` model, which generates the beautiful, high-quality illustration.
@@ -26,7 +31,7 @@ The magic of this application lies in its multi-step AI orchestration process, w
 This application is built with:
 
 - **Frontend:** React, TypeScript, and Tailwind CSS for a modern, type-safe, and rapidly-styled user interface.
-- **Coordinator:** Google AI Studio, in all its knowledgeable, stubborn, and overcorrecting glory
+- **Coordinator:** [Google AI Studio](https://aistudio.google.com/), in all its knowledgeable, stubborn, and overcorrecting glory.
 - **AI Models:**
   - **Google Gemini 2.5 Flash:** The workhorse for all language tasks: generating titles, creating plots for the "Surprise Me!" feature, and performing the crucial "prompt engineering" step.
   - **Google Imagen 3:** The powerful image generation model that brings the story to life, creating illustrations based on the engineered prompts.
@@ -39,7 +44,7 @@ This application is built with:
 
 - A modern web browser.
 - [Node.js](https://nodejs.org/) and npm installed on your machine.
-- A Google AI API key. You can get one for free from [Google AI Studio](https://aistudio.google.com/).
+- A Google AI API key. You can get one for free from [Google AI Studio](https://aistudio.google.com/) if you're using this ON Google AI Studio. If not, you have to get an API key with billing enabled to generate images via Imagen, which kinda sucks.
 
 ### Running the Application
 
