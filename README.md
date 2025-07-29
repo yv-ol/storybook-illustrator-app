@@ -4,9 +4,9 @@
 This project is a web application that uses Google's Gemini and Imagen models to generate unique illustrations for user-written stories. It's a demonstration of how to combine language and image models to create a cohesive, personalized piece of content, like a children's storybook.
 
 ## See it in Action
-- [Vercel Deployment](https://storybook-illustrator-4jo1ywlmb-yv-os-projects.vercel.app)
-- [Demo](https://youtu.be/YiOz1zq--eg)
-- [Sample PDF Output](SamplePDFOutput-Pips_Big_Blinking_Adventure.pdf)
+Live App: [Vercel Deployment](https://storybook-illustrator-app.vercel.app/)
+Video Demo: [Youtube](https://youtu.be/YiOz1zq--eg)
+Sample PDF Output: [GitHub](SamplePDFOutput-Pips_Big_Blinking_Adventure.pdf)
 
 ## Features
 
